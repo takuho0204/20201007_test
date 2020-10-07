@@ -1,0 +1,95 @@
+.inner{
+    width: 87.2%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+body{
+    color: #707070;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+}
+h2{
+    color: #303030;
+    font-size: 26px;
+}
+h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: #303030;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #707070;
+}
+.home{
+    color: #FFBF9D;
+}
+/*header*/
+
+header{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+header nav ul li{
+    margin-left: 40px;
+}
+/*main*/
+.contents{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contents img{
+    margin-right: 30px;
+}
+
+.news-letter{
+    background: #FDF5ED;
+}
+
+.news-letter a{
+    display: block;
+    width: 240px;
+    height: 56px;
+    background: #FFBF9D;
+    color: white;
+    text-align: center;
+    line-height: 56px;
+}
+
+.news-letter dt{
+    display: block;
+    width: 100px;
+    height: 25px;
+    background: #303030;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+.news-letter dl{
+    display: flex;
+}
+dd{
+    padding-left: 20px;
+    width: 165px;
+}
+.news-letter .d-list{
+    display: flex;
+
+}

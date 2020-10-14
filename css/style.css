@@ -1,6 +1,6 @@
 .inner{
     width: 87.2%;
-    max-width: 420px;
+    max-width: 660px;
     margin: 0 auto;
 }
 body{
@@ -52,7 +52,10 @@ header nav ul li{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    white-space:nowrap;
+    overflow: hidden;
 }
+
 
 .contents img{
     margin-right: 30px;
@@ -63,6 +66,7 @@ header nav ul li{
 }
 
 .news-letter a{
+    margin-bottom: 40px;
     display: block;
     width: 240px;
     height: 56px;
@@ -70,6 +74,14 @@ header nav ul li{
     color: white;
     text-align: center;
     line-height: 56px;
+}
+
+.news-letter h2{
+    padding-top: 40px;
+}
+.news-letter p{
+    padding-bottom: 40px;
+    font-size: 13px;
 }
 
 .news-letter dt{
@@ -84,12 +96,73 @@ header nav ul li{
 
 .news-letter dl{
     display: flex;
+    flex-basis: 45%;
+    margin-right: 30px;
+    padding-bottom: 25px;
+}
+
+dt{
+    width: 100px;
 }
 dd{
     padding-left: 20px;
-    width: 165px;
+
+
 }
 .news-letter .d-list{
+    border-top: solid 1px #707070;
+    padding-top: 40px;
     display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 50px 0;
+}
+
+@media screen and (min-width:660px) { 
+    .inner{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*header*/
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*main*/
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contents{
+        width: 45%;
+        white-space: normal;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+    .contents img{
+        width: 120px;
+        height: auto;
+        margin-right: 20px;
+    }
+    .contents p {
+        height: 3.4em;
+    }
+
+    .news-letter{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
 
 }
